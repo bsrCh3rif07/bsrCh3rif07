@@ -20,7 +20,7 @@ To integrate a dynamic and forward-thinking cybersecurity team, where I can cont
 
 | Skill                                        | Associated Project                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------------------|
-| SIEM Administration & Integration           | [QRadar Automation & Dashboard Integration](#projects)                             |
+| SIEM Administration & Integration           | [SIEM Automation & Dashboard Integration](#projects)                             |
 | EDR & Threat Detection                      | Endpoint monitoring & quarantine, behavior analysis                                |
 | Penetration Testing (Web, Mobile, AD)       | Internal assessments for web/mobile apps and Active Directory                      |
 | Security Automation (FortiGate/IP Blocking) | Auto IP blocklists, scanning tool centralization                                   |
@@ -143,12 +143,22 @@ To integrate a dynamic and forward-thinking cybersecurity team, where I can cont
 
 ## 💼 Projects
 
-- **QRadar Custom Dashboard** – MTTR/MTTD tracking + real-time attack visualization via REST API.
-- **SOC Toolbox** – Centralized IP scanning tool for SOC analysts.
-- **Auto IP Blocker** – Scheduled script auto-updating FortiGate blocklist to mitigate recon/brute force.
-- **Honeypot Integration** – Custom banners & web pages to simulate vulnerable environments.
-- **Phishing Detection** – AI-based DL & ML tool to flag phishing websites/emails.
-- **Have-I-Been-Pwned Clone** – Leak-check tool for emails and applications.
+- **SOAR Agent for Offense Automation** – Retrieves offenses from SIEM, enriches them with TI tools, and blacklists IPs in FortiGate.
+- **Agent-Based IDS/IPS Tool** – Host-level intrusion detection/prevention using custom lightweight agents.
+- **Blockchain Certification System** – Blockchain-based certification platform built from scratch.
+- **Invoice Generator for hypermarket** – Automated invoice generator for a retail subsidiary of hypermarket.
+- **Security Dashboard (MTTR/MTTD)** – Real-time dashboard using SIEM REST API to track detection and response metrics.
+- **Fortinet Asset Identification Tool** – Identifies machine owners via CORE & DMZ FortiGate logs.
+- **Custom Honeypot Deployment** – Honeypot system with modified web pages and SSH banners.
+- **SIEM Log Source Integration** – Integration and management of multiple log sources in SIEM.
+- **SOC Toolbox for IP Analysis** – Central interface for all IP analysis tools used by the SOC team.
+- **FortiGate Auto IP Blocker** – Automatically blocks malicious IPs every 24h via scheduled updates.
+- **Firewall Access Control Tool** – Blocks unknown external IPs from accessing FortiGate administration.
+- **Credential Leak Checker** – Tool to find leaked credentials, similar to HaveIBeenPwned.
+- **Android Spyware Investigation** – Algorithm for detecting and analyzing Android spyware behavior.
+- **AI Phishing Detector** – Phishing detection tool using ML/DL to analyze URLs and page content.
+- **FortiProxy Domains and URL Blocker** – Automates domain/URL blocking in FortiProxy using threat feeds.
+
 
 ---
 
