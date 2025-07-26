@@ -36,7 +36,9 @@ To integrate a dynamic and forward-thinking cybersecurity team, where I can cont
 <div>
   <img src="https://img.shields.io/badge/-Wireshark-1679A7?&style=for-the-badge&logo=Wireshark&logoColor=white" />
   <img src="https://img.shields.io/badge/-Suricata-EF3B2D?&style=for-the-badge&logo=Suricata&logoColor=white" />
-  <img src="https://img.shields.io/badge/-Zeek-777BB4?&style=for-the-badge&logo=Zeek&logoColor=white" />
+  <img src="https://img.shields.io/badge/-SolarWinds-FF9C00?&style=for-the-badge&logo=SolarWinds&logoColor=white" />
+  <img src="https://img.shields.io/badge/-NetFlow-444444?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-TCPdump-888888?&style=for-the-badge" />
 </div>
 
 ### Endpoint / EDR
@@ -57,6 +59,65 @@ To integrate a dynamic and forward-thinking cybersecurity team, where I can cont
   <img src="https://img.shields.io/badge/-FortiGate-EE3C3C?&style=for-the-badge&logo=Fortinet&logoColor=white" />
   <img src="https://img.shields.io/badge/-FortiWeb-990000?&style=for-the-badge&logo=Fortinet&logoColor=white" />
   <img src="https://img.shields.io/badge/-FortiMail-FF6600?&style=for-the-badge&logo=Fortinet&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Forcepoint_SMC-009688?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Snort-FF3366?&style=for-the-badge" />
+</div>
+
+### Log Analysis / Forensics
+<div>
+  <img src="https://img.shields.io/badge/-Autopsy-000000?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-FTK_Imager-444444?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Volatility-003366?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Redline-B22222?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-dd-555555?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-EnCase-333399?&style=for-the-badge" />
+</div>
+
+### Malware Analysis / Sandboxing
+<div>
+  <img src="https://img.shields.io/badge/-Cuckoo_Sandbox-4B0082?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-CapeV2-696969?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-AnyRun-0A0A0A?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Sandboxie-CC9900?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Windows_Sandbox-0078D7?&style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Ghidra-FF0000?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-IDA_Pro-000000?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-VirusTotal-4285F4?&style=for-the-badge" />
+</div>
+
+### Scripting & Automation
+<div>
+  <img src="https://img.shields.io/badge/-Python-3776AB?&style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Bash-4EAA25?&style=for-the-badge&logo=gnubash&logoColor=white" />
+  <img src="https://img.shields.io/badge/-PowerShell-012456?&style=for-the-badge&logo=powershell&logoColor=white" />
+</div>
+
+### Virtualization / Containerization
+<div>
+  <img src="https://img.shields.io/badge/-VirtualBox-183A61?&style=for-the-badge&logo=virtualbox&logoColor=white" />
+  <img src="https://img.shields.io/badge/-VMware-607078?&style=for-the-badge&logo=VMware&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Hyper--V-0078D7?&style=for-the-badge&logo=windows&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Kubernetes-326CE5?&style=for-the-badge&logo=kubernetes&logoColor=white" />
+</div>
+
+### OSINT & Threat Intel
+<div>
+  <img src="https://img.shields.io/badge/-Maltego-000000?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Shodan-FF3C00?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-theHarvester-666666?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-AlienVault_OTX-00CC99?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-AbuseIPDB-CC0000?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Cisco_Talos-1D4F91?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-IBM_XForce-052FAD?&style=for-the-badge" />
+</div>
+
+### Vulnerability Assessment
+<div>
+  <img src="https://img.shields.io/badge/-Nessus-1A1A1A?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-OpenVAS-006400?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-HCL_AppScan-003366?&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/-Nexpose-002244?&style=for-the-badge" />
 </div>
 
 ---
@@ -69,7 +130,10 @@ To integrate a dynamic and forward-thinking cybersecurity team, where I can cont
   <img src="https://img.shields.io/badge/-LetsDefend_Malware_Analysis-00BFFF?&style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-CySA%2B_Training-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
   <img src="https://img.shields.io/badge/-Fortinet_NSE1_2_3-000080?&style=for-the-badge&logo=Fortinet&logoColor=white" />
+  <img src="https://img.shields.io/badge/-CSA_&_EC-Council-004080?&style=for-the-badge&logo=ESET&logoColor=white" />
+  <img src="https://img.shields.io/badge/-ECIH_(Incident_Handler)-800000?&style=for-the-badge&logo=Hack_The_Box&logoColor=white" />
 </div>
+
 
 ---
 
@@ -86,9 +150,6 @@ To integrate a dynamic and forward-thinking cybersecurity team, where I can cont
 
 ## 📫 Contact
 
-- 📍 Location: Algiers, Algeria  
-- 📧 Email: [mohamedcherifboussoura@gmail.com](mailto:mohamedcherifboussoura@gmail.com)  
-- 📞 Phone: +213 541 77 50 46  
 - 🌐 [LinkedIn Profile](https://www.linkedin.com/in/mohamed-cherif-b-a77211181/)  
 
 ---
