@@ -95,11 +95,15 @@ To integrate a dynamic and forward-thinking cybersecurity team, where I can cont
 ### Virtualization / Containerization
 <div>
   <img src="https://img.shields.io/badge/-VirtualBox-183A61?&style=for-the-badge&logo=virtualbox&logoColor=white" />
-  <img src="https://img.shields.io/badge/-VMware-607078?&style=for-the-badge&logo=VMware&logoColor=white" />
+  <img src="https://img.shields.io/badge/-VMware_Workstation-607078?&style=for-the-badge&logo=VMware&logoColor=white" />
+  <img src="https://img.shields.io/badge/-VMware_ESXi-003366?&style=for-the-badge&logo=VMware&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Proxmox-EE6600?&style=for-the-badge&logo=Proxmox&logoColor=white" />
+  <img src="https://img.shields.io/badge/-KVM-800000?&style=for-the-badge&logo=linux&logoColor=white" />
   <img src="https://img.shields.io/badge/-Hyper--V-0078D7?&style=for-the-badge&logo=windows&logoColor=white" />
   <img src="https://img.shields.io/badge/-Docker-2496ED?&style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/-Kubernetes-326CE5?&style=for-the-badge&logo=kubernetes&logoColor=white" />
 </div>
+
 
 ### OSINT & Threat Intel
 <div>
@@ -130,8 +134,8 @@ To integrate a dynamic and forward-thinking cybersecurity team, where I can cont
   <img src="https://img.shields.io/badge/-LetsDefend_Malware_Analysis-00BFFF?&style=for-the-badge&logoColor=white" />
   <img src="https://img.shields.io/badge/-CySA%2B_Training-FF0000?&style=for-the-badge&logo=CompTIA&logoColor=white" />
   <img src="https://img.shields.io/badge/-Fortinet_NSE1_2_3-000080?&style=for-the-badge&logo=Fortinet&logoColor=white" />
-  <img src="https://img.shields.io/badge/-CSA_&_EC-Council-004080?&style=for-the-badge&logo=ESET&logoColor=white" />
-  <img src="https://img.shields.io/badge/-ECIH_(Incident_Handler)-800000?&style=for-the-badge&logo=Hack_The_Box&logoColor=white" />
+  <img src="https://img.shields.io/badge/-CSA_(Certified_SOC_Analyst)-004080?&style=for-the-badge&logo=EC-Council&logoColor=white" />
+  <img src="https://img.shields.io/badge/-ECIH_(Incident_Handler)-800000?&style=for-the-badge&logo=EC-Council&logoColor=white" />
 </div>
 
 
