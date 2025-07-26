@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Cherif Boussoura - Cybersecurity Portfolio</title>
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS for layout utilities (minimal use) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth; /* Smooth scrolling for navigation */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #0f0f1a;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar-brand, .nav-link {
+            color: #00d4ff !important;
+            font-weight: 700;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ff2e63;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link:hover {
+            color: #ffffff !important;
+        }
+        .navbar-toggler {
+            border-color: #00d4ff;
+        }
+
+        /* Section Titles */
+        .section-title {
+            color: #00d4ff;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 2rem;
+            border-bottom: 3px solid #00d4ff;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            position: relative;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: #ff2e63;
+            transition: width 0.3s ease;
+        }
+        .section-title:hover::after {
+            width: 100px;
+        }
+
+        /* Header Section */
+        .header-section {
+            background: linear-gradient(135deg, #16213e 0%, #0f0f1a 100%);
+            padding: 60px 0;
+            text-align: center;
+            border-bottom: 1px solid #2e2e4e;
+        }
+        .header-section h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideInLeft 0.8s ease-out 0.2s forwards;
+        }
+        .header-section h3 {
+            color: #00d4ff;
+            font-size: 1.5rem;
+            opacity: 0;
+            transform: translateX(-20px);
+            animation: slideInLeft 0.8s ease-out 0.4s forwards;
+        }
+        .contact-info a, .contact-info span {
+            color: #e0e0e0;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+        .contact-info a:hover, .contact-info span:hover {
+            color: #ff2e63;
+            transform: translateY(-3px);
+        }
+
+        /* Content Sections */
+        .container {
+            padding: 40px 20px;
+        }
+        .row {
+            margin-bottom: 20px;
+        }
+        h4 {
+            color: #00d4ff;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        p, li {
+            color: #b0b0c0;
+            font-size: 1rem;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out 0.2s forwards;
+        }
+        .quote {
+            font-style: italic;
+            color: #ff2e63;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out 0.4s forwards;
+        }
+
+        /* Badges for Skills */
+        .badge {
+            background-color: #2e2e4e;
+            color: #00d4ff;
+            font-size: 0.9rem;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        .badge:hover {
+            background-color: #ff2e63;
+            color: #ffffff;
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Certifications List */
+        .list-group-item {
+            background-color: #2e2e4e;
+            color: #e0e0e0;
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+        .list-group-item:hover {
+            background-color: #3e3e5e;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-section h1 {
+                font-size: 2rem;
+            }
+            .header-section h3 {
+                font-size: 1.2rem;
+            }
+            .contact-info a, .contact-info span {
+                display: block;
+                margin: 10px 0;
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .badge {
+                font-size: 0.8rem;
+                padding: 6px 10px;
+            }
+        }
+        @media (max-width: 576px) {
+            .container {
+                padding: 20px 10px;
+            }
+            .nav-link {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#about">Mohamed Cherif Boussoura</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section id="about" class="header-section">
+        <div class="container">
+            <h1>Mohamed Cherif Boussoura</h1>
+            <h3>SOC Analyst L2</h3>
+            <div class="contact-info mt-3">
+                <a href="mailto:mohamedcherifboussoura@gmail.com">📧 mohamedcherifboussoura@gmail.com</a>
+                <span>📱 +213 541 77 50 46</span>
+                <span>📍 Alger, Algeria</span>
+                <a href="https://www.linkedin.com/in/mohamed-cherif-b-a77211181/" target="_blank">💼 LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <p>🛡️ I'm a passionate cybersecurity and systems engineer with experience in Security Operations Center (SOC) Level 2 roles and penetration testing. With a strong background in SIEM, incident response, and security automation, I’m always eager to tackle complex security challenges and continue learning in a fast-paced environment.</p>
+                <p>My goal is to integrate a dynamic and forward-thinking cybersecurity team, contributing to threat detection, incident response, and system hardening while evolving towards cybersecurity architecture.</p>
+                <p class="quote">"Security is not a product, but a process." – Bruce Schneier</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Technologies Section -->
+    <section id="skills" class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="row">
+            <!-- SIEM -->
+            <div class="col-md-4 mb-3">
+                <h4>SIEM & Security Monitoring</h4>
+                <span class="badge">QRadar</span>
+                <span class="badge">Splunk</span>
+                <span class="badge">Wazuh</span>
+                <span class="badge">Event Correlation</span>
+                <span class="badge">Log Analysis</span>
+            </div>
+            <!-- Endpoint Security -->
+            <div class="col-md-4 mb-3">
+                <h4>Endpoint Security & EDR</h4>
+                <span class="badge">Kaspersky EDR</span>
+                <span class="badge">Velociraptor</span>
+                <span class="badge">Threat Detection</span>
+                <span class="badge">Incident Response</span>
+            </div>
+            <!-- Network Security -->
+            <div class="col-md-4 mb-3">
+                <h4>Network Security</h4>
+                <span class="badge">FortiGate</span>
+                <span class="badge">FortiWeb</span>
+                <span class="badge">FortiMail</span>
+                <span class="badge">Snort</span>
+                <span class="badge">Wireshark</span>
+                <span class="badge">SolarWinds</span>
+                <span class="badge">Suricata</span>
+                <span class="badge">NetFlow</span>
+                <span class="badge">TCPdump</span>
+            </div>
+            <!-- Malware Analysis -->
+            <div class="col-md-4 mb-3">
+                <h4>Malware Analysis & Forensics</h4>
+                <span class="badge">Cuckoo Sandbox</span>
+                <span class="badge">CapeV2</span>
+                <span class="badge">Volatility</span>
+                <span class="badge">Autopsy</span>
+                <span class="badge">Ghidra</span>
+                <span class="badge">IDA Pro</span>
+                <span class="badge">Redline</span>
+                <span class="badge">FTK Imager</span>
+                <span class="badge">EnCase</span>
+            </div>
+            <!-- Programming & Automation -->
+            <div class="col-md-4 mb-3">
+                <h4>Programming & Automation</h4>
+                <span class="badge">Python</span>
+                <span class="badge">Bash</span>
+                <span class="badge">PowerShell</span>
+                <span class="badge">Security Automation</span>
+                <span class="badge">SOAR</span>
+            </div>
+            <!-- Threat Intelligence -->
+            <div class="col-md-4 mb-3">
+                <h4>Threat Intelligence & OSINT</h4>
+                <span class="badge">Maltego</span>
+                <span class="badge">Shodan</span>
+                <span class="badge">AlienVault OTX</span>
+                <span class="badge">VirusTotal</span>
+                <span class="badge">Cisco Talos</span>
+                <span class="badge">theHarvester</span>
+                <span class="badge">AbuseIPDB</span>
+                <span class="badge">IBM X-Force</span>
+            </div>
+            <!-- Vulnerability Assessment -->
+            <div class="col-md-4 mb-3">
+                <h4>Vulnerability Assessment</h4>
+                <span class="badge">Nessus</span>
+                <span class="badge">OpenVAS</span>
+                <span class="badge">HCL AppScan</span>
+                <span class="badge">Nexpose</span>
+            </div>
+            <!-- Virtualization & Containerization -->
+            <div class="col-md-4 mb-3">
+                <h4>Virtualization & Containerization</h4>
+                <span class="badge">VirtualBox</span>
+                <span class="badge">VMware Workstation</span>
+                <span class="badge">VMware ESXi</span>
+                <span class="badge">Proxmox</span>
+                <span class="badge">KVM</span>
+                <span class="badge">Hyper-V</span>
+                <span class="badge">Docker</span>
+                <span class="badge">Kubernetes</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="row">
+            <div class="col-md-12 mb-4">
+                <h4>SOC Analyst L2 & Pentester - AT-Mobilis Algerie (02/2024 - Present)</h4>
+                <ul>
+                    <li>SIEM Operations: Monitor security events, identify threats through log correlation, maintain SIEM solutions (QRadar, Splunk, Wazuh).</li>
+                    <li>EDR Management: Real-time threat response, quarantine actions, malicious file deletion, abnormal behavior monitoring.</li>
+                    <li>Penetration Testing: Comprehensive security assessments of web applications, mobile applications, and Active Directory infrastructure.</li>
+                </ul>
+            </div>
+            <div class="col-md-12 mb-4">
+                <h4>BSSI Support - Unodis Algerie (11/2023 - 02/2024)</h4>
+                <ul>
+                    <li>Provided technical support for corporate information systems, troubleshooting, user account management, SAGE software maintenance.</li>
+                    <li>Developed custom applications to optimize business operations.</li>
+                </ul>
+            </div>
+            <div class="col-md-12 mb-4">
+                <h4>Cybersecurity Intern - Wataniya Telecom Algeria (Ooredoo) (02/2023 - 07/2023)</h4>
+                <ul>
+                    <li>Developed a web application for ransomware detection and prevention using AI-powered real-time monitoring and suspicious behavior analysis.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Projects Section -->
+    <section id="projects" class="container">
+        <h2 class="section-title">Key Projects</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <h4>SOAR Agent for Offense Automation</h4>
+                <p>Automated system that retrieves offenses from SIEM, enriches them with threat intelligence tools, and automatically blacklists malicious IPs in FortiGate firewalls.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>Agent-Based IDS/IPS Tool</h4>
+                <p>Custom lightweight intrusion detection and prevention system operating at the host level using intelligent agent architecture.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>AI Phishing Detector</h4>
+                <p>Advanced phishing detection tool utilizing machine learning and deep learning algorithms to analyze URLs and page content for malicious indicators.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>Blockchain Certification System</h4>
+                <p>Built-from-scratch blockchain-based certification platform similar to Bitcoin, ensuring tamper-proof credential verification.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>Security Dashboard (MTTR/MTTD)</h4>
+                <p>Real-time dashboard using SIEM REST API to track Mean Time to Detection and Mean Time to Response metrics for security incidents.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>Android Spyware Investigation</h4>
+                <p>Sophisticated algorithm for detecting and analyzing Android spyware behavior patterns and malicious activities.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>Fortinet Asset Identification Tool</h4>
+                <p>Tool to identify machine owners via CORE & DMZ FortiGate logs for enhanced network visibility.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>Custom Honeypot Deployment</h4>
+                <p>Honeypot system with modified web pages and SSH banners tailored to company specifications.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>SOC Toolbox for IP Analysis</h4>
+                <p>Centralized interface for all IP analysis tools used by the SOC team, improving efficiency.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>FortiGate Auto IP Blocker</h4>
+                <p>Automatically blocks malicious IPs every 24 hours via scheduled updates using threat feeds.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>Firewall Access Control Tool</h4>
+                <p>Blocks unknown external IPs from accessing FortiGate administration, enhancing firewall security.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>Credential Leak Checker</h4>
+                <p>Tool to detect leaked credentials, similar to HaveIBeenPwned, for proactive security monitoring.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>FortiProxy Domains and URL Blocker</h4>
+                <p>Automates domain and URL blocking in FortiProxy using threat intelligence feeds.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+                <h4>Invoice Generator for Hypermarket</h4>
+                <p>Automated invoice generator for a retail subsidiary of a hypermarket, streamlining operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="container">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="list-group">
+            <li class="list-group-item">IBM QRadar SIEM Foundation</li>
+            <li class="list-group-item">LetsDefend SOC Analyst Path</li>
+            <li class="list-group-item">LetsDefend Malware Analysis</li>
+            <li class="list-group-item">CompTIA CySA+ Preparation</li>
+            <li class="list-group-item">Fortinet NSE 1, 2, 3</li>
+            <li class="list-group-item">CSA (Certified SOC Analyst)</li>
+            <li class="list-group-item">ECIH (Incident Handler)</li>
+        </ul>
+    </section>
+
+    <!-- Bootstrap JS for navbar functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript for Intersection Observer -->
+    <script>
+        // Add fade-in animation when sections enter the viewport
+        const sections = document.querySelectorAll('.container, .header-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.querySelectorAll('h4, p, li, .quote').forEach(el => {
+                        el.style.animation = 'fadeInUp 0.6s ease-out forwards';
+                    });
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
